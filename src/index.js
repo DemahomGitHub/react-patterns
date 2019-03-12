@@ -70,8 +70,8 @@ function ArrayAsChildren() {
   return (
     <div className="Card">
       <h5>My favorite fruits</h5>
-      {arr.map(item => (
-        <li>{item}</li>
+      {arr.map((item, i) => (
+        <li key={i}>{item}</li>
       ))}
     </div>
   );
@@ -104,9 +104,6 @@ function RenderPropComponent(props) {
 }
 
 // 10. Children pass-through
-function ChildrenPassThroughCompoment(props) {
-  return <div className="Card"> ljdflkd </div>;
-}
 
 function App() {
   return (
