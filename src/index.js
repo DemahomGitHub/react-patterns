@@ -51,11 +51,11 @@ function ConditionalRendering({ name, age }) {
   return (
     <div className="Card Blue-Card">
       <h5>Conditional Rendering </h5>
-      {age < 13 && <span>Hey {name}! You're still a child. </span>}
+      {age < 13 && <span>Hey {name}! You are still a child. </span>}
       {age < 18 ? (
-        <span>Hey {name}! You're still a Teenager. </span>
+        <span>Hey {name}! You are still a Teenager. </span>
       ) : (
-        <span>Hey {name}! You're an adult. </span>
+        <span>Hey {name}! You are an adult. </span>
       )}
     </div>
   );
@@ -92,7 +92,7 @@ function RenderPropComponent(props) {
     <div className="Card LightBlue-Card">
       <h5>Render prop component </h5>
       <UserProfile>
-        {({ name, sex, age, revenu }) => (
+        {({ name, sex, age, revenu }) => (API
           <div>
             <h4>User profile</h4>
             <div>Name: {name}</div>
