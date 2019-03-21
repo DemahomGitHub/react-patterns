@@ -36,10 +36,12 @@ function MergeDestructedProposWithOtherValues({ className, ...props }) {
   return (
     <div className="Card Green-Card">
       <h5>Merge destructed with other values</h5>
-      <button className={classNames}>{text}</button>
+      <Button className={classNames}>{text}</Button>
     </div>
   );
 }
+
+
 
 // 5. Conditonal Rendering
 // IF statement: condition && <span>Rendered when condiontion = true </span>;
@@ -90,7 +92,7 @@ function RenderPropComponent(props) {
     <div className="Card LightBlue-Card">
       <h5>Render prop component </h5>
       <UserProfile>
-        {({ name, sex, age, revenu }) => (
+        {({ name, sex, age, revenu }) => (API
           <div>
             <h4>User profile</h4>
             <div>Name: {name}</div>
@@ -108,6 +110,9 @@ function RenderPropComponent(props) {
 
 // 10. Children pass-through - React Context (an alternative to React-Redux)
 // The React Context Provider implements this pattern. Have a look at ReactContextProvider.js file
+
+// 11. Proxy pattern
+const Button = props => <button type="button" {...props} />;
 
 // Layout component
 
